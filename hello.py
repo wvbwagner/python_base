@@ -24,7 +24,8 @@ __license__ = "unlicensed"
 
 import os
 
-current_language = os.getenv("LANG")[:5]
+current_language = os.getenv("LANG", "en_US")[:5] 
+'''en_US será a padrão caso não exista a env LANG'''
 
 msg = "Hello, World!"
 
